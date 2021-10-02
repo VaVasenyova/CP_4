@@ -1,0 +1,59 @@
+#python CP_4.txt
+ 
+#CP_4.1
+print('введите имя')
+A = input()
+print('ведите фамилию')
+B = input()
+print('введите год рождения')
+C = input()
+
+C=int(C)
+
+print (A + "_" + B + "_"+str(C))
+C+=60
+print (B + "_" + A + "_" + str(C))
+
+
+#CP_4.2
+print('ведите длину одного катета')
+k=input()
+print('введите длину другого катета')
+m=input()
+
+k=int(k)
+m=int(m)
+
+n=(k*k+m*m)**(1/2)
+S=k*m/2        #площадь треугольника
+P=k+m+n        #периметр треугольника
+
+print(S)
+print(P)
+
+
+#CP_4.3
+print('введите радиус')
+r=input()
+r=int(r)
+
+Skr=3.14*r*r
+print(Skr)
+
+
+#CP_4.4
+print('введите количество лет')
+tim=input()
+m=5
+print('введите количество экспонатов')
+cha=input()
+
+tim=int(tim)
+cha=int(cha)
+
+ce=tim*365*8*60/m #число экспонатов
+ce=int(ce)
+print('за '+str(tim)+'часов удастся посмотреть '+str(ce)+' экспонатов')
+
+vr=cha*m/60/8/365
+print('на просмотр экспонатов потребуется '+str(vr)+' лет')
